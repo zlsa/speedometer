@@ -1,0 +1,78 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+
+  android:background="#000000"
+  >
+
+  <LinearLayout
+    android:id="@+id/speed_container"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+
+    android:clickable="true"
+    android:onClick="cycleSpeedUnit"
+    >
+
+    <TextView
+      android:id="@+id/speed_padding"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:gravity="bottom"
+
+      android:text=""
+
+      android:textColor="@color/speed_padding"
+      android:textSize="90sp"
+      android:fontFamily="monospace"
+      />
+
+    <TextView
+      android:id="@+id/speed"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:gravity="bottom"
+
+      android:text=""
+
+      android:textColor="@color/speed"
+      android:textSize="90sp"
+      android:fontFamily="monospace"
+      />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/speed_units"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+
+    android:layout_below="@id/speed_container"
+    android:layout_alignStart="@id/speed_container"
+    android:layout_alignEnd="@id/speed_container"
+
+    android:layout_marginTop="-12dp"
+
+    android:text="@string/speed_unit_mph"
+
+    android:textColor="@color/speed_units"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif"
+    />
+
+</RelativeLayout>

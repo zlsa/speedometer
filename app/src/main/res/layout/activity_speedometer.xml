@@ -75,4 +75,25 @@
     android:fontFamily="sans-serif"
     />
 
+  <TextView
+    android:id="@+id/version"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+
+    android:layout_margin="16dp"
+
+    android:text="@string/version_loading"
+
+    android:textColor="@color/speed_units"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif"
+    />
+
 </RelativeLayout>

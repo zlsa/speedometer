@@ -26,6 +26,7 @@ class SpeedometerActivity : AppCompatActivity() {
   var speed_padding: TextView? = null
   var speed_view: TextView? = null
   var speed_unit: TextView? = null
+  var version_view: TextView? = null
 
   class SpeedUnit(val resource: Int, val factor: Double) {
 
@@ -55,6 +56,9 @@ class SpeedometerActivity : AppCompatActivity() {
     this.speed_padding = this.findViewById(R.id.speed_padding) as TextView
     this.speed_view = this.findViewById(R.id.speed) as TextView
     this.speed_unit = this.findViewById(R.id.speed_units) as TextView
+    this.version_view = this.findViewById(R.id.version) as TextView
+
+    this.version_view?.text = BuildConfig.VERSION_NAME
 
     this.setSpeedUnitIndex(0)
 

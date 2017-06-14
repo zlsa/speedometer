@@ -5,4 +5,5 @@
   <string name="speed_unit_kmh">KM/H</string>
   <string name="speed_unit_ms">M/S</string>
   <string name="speed_unit_mach">MACH</string>
+  <string name="version_loading">\???</string>
 </resources>
